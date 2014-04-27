@@ -30,10 +30,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## The second funtion cacheSolve takes as an argument 
-## the ouput of the special "matrix" the from makeCacheMatrix 
-## function and outputs the Matrix Inverse values.
-## This output can result from calcualting the inverse matrix
-## or securing the cached data. This depends on if mx was previuosly 
+## the ouput of the makeCacheMatrix function and outputs 
+## the Matrix Inverse values.The outputs from the cacheSolve 
+## function can result from calcualting the inverse matrix or
+## securing the cached data. This depends on if mx was previuosly 
 ## calculted or not
 
 cacheSolve <- function(x, ...) {
@@ -55,5 +55,5 @@ cacheSolve <- function(x, ...) {
       mx
 } 
         
-#credit to Fu Sheng Wang for help        
+#thanks to Fu Sheng Wang explanantions     
 
