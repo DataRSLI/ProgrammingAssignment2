@@ -1,6 +1,6 @@
 ## The following functions(makeCacheMatrix and cacheSolve) aide 
-## in making potetionally time-consuming Matrix Inversion
-## computations more efficient through applying a cacheing technique 
+## in making potentially time-consuming Matrix Inversion
+## computations more efficient through applying a caching technique 
   
 
 ## The first funtion makeCacheMatrix takes an argument x of 
@@ -29,12 +29,12 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## The second funtion cacheSolve takes as an argument 
-## the ouput of the makeCacheMatrix function and outputs 
+## The second function cacheSolve takes as an argument 
+## the output of the makeCacheMatrix function and outputs 
 ## the Matrix Inverse values.The outputs from the cacheSolve 
-## function can result from calcualting the inverse matrix or
-## securing the cached data. This depends on if mx was previuosly 
-## calculted or not
+## function can result from calculating the inverse matrix or
+## securing the cached data. This depends on if mx was previously 
+## calculated or not
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
@@ -48,12 +48,12 @@ cacheSolve <- function(x, ...) {
       
         data <- x$get()     # mx is null or not caluculted
                             # must therefore calulate the inverse
-      mx <- solve(data)     # matix here and capture results in x's
+      mx <- solve(data)     # matix here and capture the results in x's
                             # cache then return results
       x$setInverse(mx)
       
       mx
 } 
         
-#thanks to Fu Sheng Wang explanantions     
+#credit to Fu Sheng Wang for great assignment explanations!
 
